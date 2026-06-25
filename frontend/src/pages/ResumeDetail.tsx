@@ -1,5 +1,6 @@
 import { useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeft, Download, Trash2, Sparkles, Star, FileText, Mail, Phone, Linkedin, Zap, TrendingUp, Target } from 'lucide-react';
+import { ArrowLeft, Download, Trash2, Sparkles, Star, FileText, Mail, Phone , Zap, TrendingUp, Target } from 'lucide-react';
+import { BsLinkedin } from 'react-icons/bs'
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -210,7 +211,7 @@ export const ResumeDetail = () => {
                   {resume.contact_info.phone && (
                     <div className="flex items-center gap-3 p-4 bg-white rounded-xl border border-blue-100">
                       <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center">
-                        <Phone className="w-5 h-5 text-blue-600" />
+                        <BsLinkedin className="w-5 h-5 text-blue-600" />
                       </div>
                       <div>
                         <dt className="text-xs font-medium text-gray-500 mb-1">Phone</dt>
@@ -221,7 +222,7 @@ export const ResumeDetail = () => {
                   {resume.contact_info.linkedin && (
                     <div className="flex items-center gap-3 p-4 bg-white rounded-xl border border-blue-100 md:col-span-2">
                       <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center">
-                        <Linkedin className="w-5 h-5 text-blue-600" />
+                        <Phone className="w-5 h-5 text-blue-600" />
                       </div>
                       <div className="flex-1 min-w-0">
                         <dt className="text-xs font-medium text-gray-500 mb-1">LinkedIn</dt>

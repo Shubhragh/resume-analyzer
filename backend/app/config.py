@@ -50,8 +50,11 @@ class Settings(BaseSettings):
     # Rate Limiting
     RATE_LIMIT_PER_MINUTE: int = 60
     
-    # CORS
-    CORS_ORIGINS: list = ["http://localhost:3000", "http://localhost:5173"]
+    CORS_ORIGINS: list = [
+    "https://clinton-configuration-operating-wow.trycloudflare.com",
+    "http://localhost:3000",
+    "http://localhost:5173"
+]
     
     # Celery
     CELERY_BROKER_URL: str = "redis://localhost:6379/0"
